@@ -1,0 +1,315 @@
+2015-04-21 10:26:22,693 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#initSolrServer:235] - Initializing Solr Server on http://localhost:8080/vlo-solr-3.1/core0/
+2015-04-21 10:26:22,837 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:124] - Deleting original data...
+2015-04-21 10:26:22,985 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:127] - Deleting original data done.
+2015-04-21 10:26:22,985 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:132] - Start of processing: Test
+2015-04-21 10:26:47,906 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:143] - Skipping /var/vlo/data/test/oai_dp_1185800229C0000000317515dp5.xml because it is too large.
+2015-04-21 10:26:47,921 ERROR [eu.clarin.cmdi.vlo.importer.FacetMappingFactory#createConceptLinkPathMapping:229] - Cannot create ConceptLink Map from xsd (xsd is probably not reachable): clarin.eu:cr1:p_1380203308465. All metadata instances that use this xsd will not be imported correctly.
+2015-04-21 10:26:47,933 ERROR [eu.clarin.cmdi.vlo.importer.CMDIComponentProfileNamePostProcessor#process:67] - Cannot open and/or parse XML Schema: http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1380203308465.
+2015-04-21 10:26:55,903 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:143] - Skipping /var/vlo/data/test/oai_easy_dans_knaw_nl_easy_file_4334126.xml because it is too large.
+2015-04-21 10:26:55,968 ERROR [eu.clarin.cmdi.vlo.importer.FacetMappingFactory#createConceptLinkPathMapping:229] - Cannot create ConceptLink Map from xsd (xsd is probably not reachable): http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1360230992133/xsd. All metadata instances that use this xsd will not be imported correctly.
+2015-04-21 10:26:56,590 ERROR [eu.clarin.cmdi.vlo.importer.CMDIComponentProfileNamePostProcessor#process:67] - Cannot open and/or parse XML Schema: http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/
+      http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1360230992133/xsd
+    .
+2015-04-21 10:27:29,599 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 23 docs to solr server. Total number of docs updated till now: 0
+2015-04-21 10:27:29,602 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:152] - End of processing: Test
+2015-04-21 10:27:30,481 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#buildSuggesterIndex:430] - Building index for autocompletion.
+2015-04-21 10:27:30,524 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:179] - Found 6 file(s) without an id. (id is generated based on fileName but that may not be unique)
+2015-04-21 10:27:30,524 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:180] - Found 0 file(s) with errors.
+2015-04-21 10:27:30,524 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:181] - Found 3 file(s) that where ignored (files without resources or any link to a search service or landing page are ignored).
+2015-04-21 10:27:30,525 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:183] - Update of 23 took 67 secs. Total nr of files analyzed 26
+2015-04-21 10:31:18,602 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#initSolrServer:235] - Initializing Solr Server on http://localhost:8080/vlo-solr-3.1/core0/
+2015-04-21 10:31:18,772 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:124] - Deleting original data...
+2015-04-21 10:31:18,879 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:127] - Deleting original data done.
+2015-04-21 10:31:18,880 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:132] - Start of processing: Test
+2015-04-21 10:31:42,200 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:143] - Skipping /var/vlo/data/test/oai_dp_1185800229C0000000317515dp5.xml because it is too large.
+2015-04-21 10:31:42,215 ERROR [eu.clarin.cmdi.vlo.importer.FacetMappingFactory#createConceptLinkPathMapping:229] - Cannot create ConceptLink Map from xsd (xsd is probably not reachable): clarin.eu:cr1:p_1380203308465. All metadata instances that use this xsd will not be imported correctly.
+2015-04-21 10:31:42,227 ERROR [eu.clarin.cmdi.vlo.importer.CMDIComponentProfileNamePostProcessor#process:67] - Cannot open and/or parse XML Schema: http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1380203308465.
+2015-04-21 10:31:50,174 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:143] - Skipping /var/vlo/data/test/oai_easy_dans_knaw_nl_easy_file_4334126.xml because it is too large.
+2015-04-21 10:31:50,243 ERROR [eu.clarin.cmdi.vlo.importer.FacetMappingFactory#createConceptLinkPathMapping:229] - Cannot create ConceptLink Map from xsd (xsd is probably not reachable): http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1360230992133/xsd. All metadata instances that use this xsd will not be imported correctly.
+2015-04-21 10:31:50,872 ERROR [eu.clarin.cmdi.vlo.importer.CMDIComponentProfileNamePostProcessor#process:67] - Cannot open and/or parse XML Schema: http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/
+      http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1360230992133/xsd
+    .
+2015-04-21 10:32:23,864 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 23 docs to solr server. Total number of docs updated till now: 0
+2015-04-21 10:32:23,866 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:152] - End of processing: Test
+2015-04-21 10:32:24,293 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#buildSuggesterIndex:430] - Building index for autocompletion.
+2015-04-21 10:32:24,310 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:179] - Found 6 file(s) without an id. (id is generated based on fileName but that may not be unique)
+2015-04-21 10:32:24,310 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:180] - Found 0 file(s) with errors.
+2015-04-21 10:32:24,310 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:181] - Found 3 file(s) that where ignored (files without resources or any link to a search service or landing page are ignored).
+2015-04-21 10:32:24,311 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:183] - Update of 23 took 65 secs. Total nr of files analyzed 26
+2015-04-21 10:32:36,873 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#initSolrServer:235] - Initializing Solr Server on http://localhost:8080/vlo-solr-3.1/core0/
+2015-04-21 10:32:37,018 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:124] - Deleting original data...
+2015-04-21 10:32:37,126 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:127] - Deleting original data done.
+2015-04-21 10:32:37,126 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:132] - Start of processing: CLARIN + Others
+2015-04-21 10:33:16,617 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 0
+2015-04-21 10:33:17,005 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 128
+2015-04-21 10:33:17,324 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 256
+2015-04-21 10:33:17,659 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 384
+2015-04-21 10:33:17,971 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 512
+2015-04-21 10:33:18,273 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 640
+2015-04-21 10:33:18,569 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 768
+2015-04-21 10:33:18,860 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 896
+2015-04-21 10:33:19,165 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 1024
+2015-04-21 10:33:19,467 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 1152
+2015-04-21 10:33:19,754 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 1280
+2015-04-21 10:33:20,061 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 1408
+2015-04-21 10:33:20,363 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 1536
+2015-04-21 10:33:20,660 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 1664
+2015-04-21 10:33:20,955 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 1792
+2015-04-21 10:33:21,250 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 1920
+2015-04-21 10:33:21,541 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 2048
+2015-04-21 10:33:21,840 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 2176
+2015-04-21 10:33:22,133 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 2304
+2015-04-21 10:33:22,436 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 2432
+2015-04-21 10:33:22,734 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 2560
+2015-04-21 10:33:23,028 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 2688
+2015-04-21 10:38:12,466 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#initSolrServer:235] - Initializing Solr Server on http://localhost:8080/vlo-solr-3.1/core0/
+2015-04-21 10:38:12,612 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:124] - Deleting original data...
+2015-04-21 10:38:12,715 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:127] - Deleting original data done.
+2015-04-21 10:38:12,715 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:132] - Start of processing: Test
+2015-04-21 10:38:36,316 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:143] - Skipping /var/vlo/data/test/oai_dp_1185800229C0000000317515dp5.xml because it is too large.
+2015-04-21 10:38:36,534 ERROR [eu.clarin.cmdi.vlo.importer.FacetMappingFactory#createConceptLinkPathMapping:229] - Cannot create ConceptLink Map from xsd (xsd is probably not reachable): clarin.eu:cr1:p_1380203308465. All metadata instances that use this xsd will not be imported correctly.
+2015-04-21 10:38:36,546 ERROR [eu.clarin.cmdi.vlo.importer.CMDIComponentProfileNamePostProcessor#process:67] - Cannot open and/or parse XML Schema: http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1380203308465.
+2015-04-21 10:38:44,049 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:143] - Skipping /var/vlo/data/test/oai_easy_dans_knaw_nl_easy_file_4334126.xml because it is too large.
+2015-04-21 10:38:44,146 ERROR [eu.clarin.cmdi.vlo.importer.FacetMappingFactory#createConceptLinkPathMapping:229] - Cannot create ConceptLink Map from xsd (xsd is probably not reachable): http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1360230992133/xsd. All metadata instances that use this xsd will not be imported correctly.
+2015-04-21 10:38:44,784 ERROR [eu.clarin.cmdi.vlo.importer.CMDIComponentProfileNamePostProcessor#process:67] - Cannot open and/or parse XML Schema: http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/
+      http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1360230992133/xsd
+    .
+2015-04-21 10:39:17,884 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 23 docs to solr server. Total number of docs updated till now: 0
+2015-04-21 10:39:17,886 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:152] - End of processing: Test
+2015-04-21 10:39:18,250 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#buildSuggesterIndex:430] - Building index for autocompletion.
+2015-04-21 10:39:18,266 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:179] - Found 6 file(s) without an id. (id is generated based on fileName but that may not be unique)
+2015-04-21 10:39:18,266 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:180] - Found 0 file(s) with errors.
+2015-04-21 10:39:18,266 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:181] - Found 3 file(s) that where ignored (files without resources or any link to a search service or landing page are ignored).
+2015-04-21 10:39:18,267 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:183] - Update of 23 took 65 secs. Total nr of files analyzed 26
+2015-04-21 11:45:04,408 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#initSolrServer:235] - Initializing Solr Server on http://localhost:8080/vlo-solr-3.1/core0/
+2015-04-21 11:45:04,627 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:124] - Deleting original data...
+2015-04-21 11:45:04,780 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:127] - Deleting original data done.
+2015-04-21 11:45:04,780 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:132] - Start of processing: Test
+2015-04-21 11:45:30,435 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:143] - Skipping /var/vlo/data/test/oai_dp_1185800229C0000000317515dp5.xml because it is too large.
+2015-04-21 11:45:30,449 ERROR [eu.clarin.cmdi.vlo.importer.FacetMappingFactory#createConceptLinkPathMapping:229] - Cannot create ConceptLink Map from xsd (xsd is probably not reachable): clarin.eu:cr1:p_1380203308465. All metadata instances that use this xsd will not be imported correctly.
+2015-04-21 11:45:30,461 ERROR [eu.clarin.cmdi.vlo.importer.CMDIComponentProfileNamePostProcessor#process:67] - Cannot open and/or parse XML Schema: http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1380203308465.
+2015-04-21 11:45:39,031 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:143] - Skipping /var/vlo/data/test/oai_easy_dans_knaw_nl_easy_file_4334126.xml because it is too large.
+2015-04-21 11:45:39,118 ERROR [eu.clarin.cmdi.vlo.importer.FacetMappingFactory#createConceptLinkPathMapping:229] - Cannot create ConceptLink Map from xsd (xsd is probably not reachable): http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1360230992133/xsd. All metadata instances that use this xsd will not be imported correctly.
+2015-04-21 11:45:40,033 ERROR [eu.clarin.cmdi.vlo.importer.CMDIComponentProfileNamePostProcessor#process:67] - Cannot open and/or parse XML Schema: http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/
+      http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1360230992133/xsd
+    .
+2015-04-21 11:46:15,968 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 23 docs to solr server. Total number of docs updated till now: 0
+2015-04-21 11:46:15,970 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:152] - End of processing: Test
+2015-04-21 11:46:16,332 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#buildSuggesterIndex:430] - Building index for autocompletion.
+2015-04-21 11:46:16,348 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:179] - Found 6 file(s) without an id. (id is generated based on fileName but that may not be unique)
+2015-04-21 11:46:16,348 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:180] - Found 0 file(s) with errors.
+2015-04-21 11:46:16,348 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:181] - Found 3 file(s) that where ignored (files without resources or any link to a search service or landing page are ignored).
+2015-04-21 11:46:16,349 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:183] - Update of 23 took 71 secs. Total nr of files analyzed 26
+2015-04-21 11:49:26,095 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#initSolrServer:235] - Initializing Solr Server on http://localhost:8080/vlo-solr-3.1/core0/
+2015-04-21 11:49:26,292 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:124] - Deleting original data...
+2015-04-21 11:49:26,435 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:127] - Deleting original data done.
+2015-04-21 11:49:26,435 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:132] - Start of processing: Test
+2015-04-21 11:49:53,770 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:143] - Skipping /var/vlo/data/test/oai_dp_1185800229C0000000317515dp5.xml because it is too large.
+2015-04-21 11:49:53,787 ERROR [eu.clarin.cmdi.vlo.importer.FacetMappingFactory#createConceptLinkPathMapping:229] - Cannot create ConceptLink Map from xsd (xsd is probably not reachable): clarin.eu:cr1:p_1380203308465. All metadata instances that use this xsd will not be imported correctly.
+2015-04-21 11:49:53,799 ERROR [eu.clarin.cmdi.vlo.importer.CMDIComponentProfileNamePostProcessor#process:67] - Cannot open and/or parse XML Schema: http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1380203308465.
+2015-04-21 11:50:01,455 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:143] - Skipping /var/vlo/data/test/oai_easy_dans_knaw_nl_easy_file_4334126.xml because it is too large.
+2015-04-21 11:50:01,547 ERROR [eu.clarin.cmdi.vlo.importer.FacetMappingFactory#createConceptLinkPathMapping:229] - Cannot create ConceptLink Map from xsd (xsd is probably not reachable): http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1360230992133/xsd. All metadata instances that use this xsd will not be imported correctly.
+2015-04-21 11:50:02,390 ERROR [eu.clarin.cmdi.vlo.importer.CMDIComponentProfileNamePostProcessor#process:67] - Cannot open and/or parse XML Schema: http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/
+      http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1360230992133/xsd
+    .
+2015-04-21 11:50:37,153 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 23 docs to solr server. Total number of docs updated till now: 0
+2015-04-21 11:50:37,155 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:152] - End of processing: Test
+2015-04-21 11:50:37,519 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#buildSuggesterIndex:430] - Building index for autocompletion.
+2015-04-21 11:50:37,532 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:179] - Found 6 file(s) without an id. (id is generated based on fileName but that may not be unique)
+2015-04-21 11:50:37,532 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:180] - Found 0 file(s) with errors.
+2015-04-21 11:50:37,532 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:181] - Found 3 file(s) that where ignored (files without resources or any link to a search service or landing page are ignored).
+2015-04-21 11:50:37,533 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:183] - Update of 23 took 71 secs. Total nr of files analyzed 26
+2015-04-21 14:10:28,162 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#initSolrServer:235] - Initializing Solr Server on http://localhost:8080/vlo-solr-3.1/core0/
+2015-04-21 14:10:28,337 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:124] - Deleting original data...
+2015-04-21 14:10:28,519 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:127] - Deleting original data done.
+2015-04-21 14:10:28,519 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:132] - Start of processing: CLARIN + Others
+2015-04-21 14:11:02,112 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 0
+2015-04-21 14:11:02,639 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 128
+2015-04-21 14:11:02,994 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 256
+2015-04-21 14:11:03,380 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 384
+2015-04-21 14:11:03,706 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 512
+2015-04-21 14:11:04,017 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 640
+2015-04-21 14:11:04,321 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 768
+2015-04-21 14:11:04,618 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 896
+2015-04-21 14:11:04,927 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 1024
+2015-04-21 14:11:05,225 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 1152
+2015-04-21 14:11:05,525 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 1280
+2015-04-21 14:11:05,819 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 1408
+2015-04-21 14:11:06,122 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 1536
+2015-04-21 14:11:06,427 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 1664
+2015-04-21 14:11:06,730 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 1792
+2015-04-21 14:11:07,022 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 1920
+2015-04-21 14:11:07,328 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 2048
+2015-04-21 14:11:07,616 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 2176
+2015-04-21 14:11:07,902 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 2304
+2015-04-21 14:11:08,195 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 2432
+2015-04-21 14:11:08,491 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 2560
+2015-04-21 14:11:08,783 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 2688
+2015-04-21 14:11:09,075 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 2816
+2015-04-21 14:11:09,362 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 2944
+2015-04-21 14:11:09,657 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 3072
+2015-04-21 14:11:10,233 WARN [eu.clarin.cmdi.vlo.importer.MetadataImporter#processCmdi:298] - Skipping /var/vlo/data/clarin-others/Academia_Sinica_Formosan_Language_Archive/oai_sinica_edu_tw_EarlyMandarin.xml, already processed id: CLARIN + Others/oai_sinica_edu_tw_EarlyMandarin.xml
+2015-04-21 14:11:10,236 WARN [eu.clarin.cmdi.vlo.importer.MetadataImporter#processCmdi:298] - Skipping /var/vlo/data/clarin-others/Academia_Sinica_Formosan_Language_Archive/oai_sinica_edu_tw_Formosan.xml, already processed id: CLARIN + Others/oai_sinica_edu_tw_Formosan.xml
+2015-04-21 14:11:10,239 WARN [eu.clarin.cmdi.vlo.importer.MetadataImporter#processCmdi:298] - Skipping /var/vlo/data/clarin-others/Academia_Sinica_Formosan_Language_Archive/oai_sinica_edu_tw_SinicaCorpus.xml, already processed id: CLARIN + Others/oai_sinica_edu_tw_SinicaCorpus.xml
+2015-04-21 14:11:10,330 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 3200
+2015-04-21 14:11:11,264 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:143] - Skipping /var/vlo/data/clarin-others/BAS_Repository/oai_BAS_repo_Corpora_aGender_000000.xml because it is too large.
+2015-04-21 14:11:24,944 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 3328
+2015-04-21 14:11:25,758 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 3456
+2015-04-21 14:11:26,572 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 3584
+2015-04-21 14:11:27,393 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 3712
+2015-04-21 14:11:28,239 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 3840
+2015-04-21 14:11:29,107 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 3968
+2015-04-21 14:11:29,959 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 4096
+2015-04-21 14:11:30,848 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 4224
+2015-04-21 14:11:31,672 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 4352
+2015-04-21 14:11:32,524 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 4480
+2015-04-21 14:11:33,358 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 4608
+2015-04-21 14:11:34,214 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 4736
+2015-04-21 14:11:35,069 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 4864
+2015-04-21 14:11:35,925 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 4992
+2015-04-21 14:11:36,804 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 5120
+2015-04-21 14:11:37,652 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 5248
+2015-04-21 14:11:38,493 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 5376
+2015-04-21 14:11:39,328 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 5504
+2015-04-21 14:11:40,194 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 5632
+2015-04-21 14:11:41,064 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 5760
+2015-04-21 14:11:41,916 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 5888
+2015-04-21 14:11:42,811 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 6016
+2015-04-21 14:11:43,714 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 6144
+2015-04-21 14:11:44,577 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 6272
+2015-04-21 14:11:45,457 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 6400
+2015-04-21 14:11:46,822 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 6528
+2015-04-21 14:11:47,669 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 6656
+2015-04-21 14:11:48,552 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 6784
+2015-04-21 14:11:49,439 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 6912
+2015-04-21 14:11:56,827 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 7040
+2015-04-21 14:12:00,230 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 7168
+2015-04-21 14:12:00,234 INFO [org.apache.http.impl.client.SystemDefaultHttpClient#tryExecute:693] - I/O exception (java.net.SocketException) caught when processing request: Broken pipe
+2015-04-21 14:12:00,234 INFO [org.apache.http.impl.client.SystemDefaultHttpClient#tryExecute:700] - Retrying request
+2015-04-21 14:12:00,776 INFO [org.apache.http.impl.client.SystemDefaultHttpClient#tryExecute:693] - I/O exception (java.net.SocketException) caught when processing request: Broken pipe
+2015-04-21 14:12:00,776 INFO [org.apache.http.impl.client.SystemDefaultHttpClient#tryExecute:700] - Retrying request
+2015-04-21 14:12:00,777 ERROR [org.apache.solr.client.solrj.impl.ConcurrentUpdateSolrServer#handleError:406] - error
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:178)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:671)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:486)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.solr.client.solrj.impl.ConcurrentUpdateSolrServer$Runner.run(ConcurrentUpdateSolrServer.java:233)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2015-04-21 14:12:03,467 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 128 docs to solr server. Total number of docs updated till now: 7296
+2015-04-21 14:12:03,467 ERROR [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:162] - error updating files:
+
+org.apache.solr.client.solrj.SolrServerException: java.net.ConnectException: Connection refused
+	at eu.clarin.cmdi.vlo.importer.MetadataImporter.sendDocs(MetadataImporter.java:418)
+	at eu.clarin.cmdi.vlo.importer.MetadataImporter.updateDocument(MetadataImporter.java:365)
+	at eu.clarin.cmdi.vlo.importer.MetadataImporter.processCmdi(MetadataImporter.java:292)
+	at eu.clarin.cmdi.vlo.importer.MetadataImporter.startImport(MetadataImporter.java:146)
+	at eu.clarin.cmdi.vlo.importer.MetadataImporter.main(MetadataImporter.java:519)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:178)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:671)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:486)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.solr.client.solrj.impl.ConcurrentUpdateSolrServer$Runner.run(ConcurrentUpdateSolrServer.java:233)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2015-04-21 14:12:03,468 ERROR [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:163] - Also see vlo_solr server logs for more information
+2015-04-21 14:12:03,468 ERROR [org.apache.solr.client.solrj.impl.ConcurrentUpdateSolrServer#handleError:406] - error
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:178)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.solr.client.solrj.impl.ConcurrentUpdateSolrServer$Runner.run(ConcurrentUpdateSolrServer.java:233)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2015-04-21 14:12:03,470 ERROR [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:173] - cannot commit:
+
+org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://localhost:8080/vlo-solr-3.1/core0
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.executeMethod(HttpSolrServer.java:559)
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:210)
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.request(HttpSolrServer.java:206)
+	at org.apache.solr.client.solrj.impl.ConcurrentUpdateSolrServer.request(ConcurrentUpdateSolrServer.java:295)
+	at org.apache.solr.client.solrj.request.AbstractUpdateRequest.process(AbstractUpdateRequest.java:124)
+	at org.apache.solr.client.solrj.SolrServer.commit(SolrServer.java:168)
+	at org.apache.solr.client.solrj.SolrServer.commit(SolrServer.java:146)
+	at eu.clarin.cmdi.vlo.importer.MetadataImporter.startImport(MetadataImporter.java:169)
+	at eu.clarin.cmdi.vlo.importer.MetadataImporter.main(MetadataImporter.java:519)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:178)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.solr.client.solrj.impl.HttpSolrServer.executeMethod(HttpSolrServer.java:452)
+	... 8 more
+2015-04-21 14:12:03,470 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:179] - Found 3439 file(s) without an id. (id is generated based on fileName but that may not be unique)
+2015-04-21 14:12:03,470 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:180] - Found 0 file(s) with errors.
+2015-04-21 14:12:03,470 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:181] - Found 0 file(s) that where ignored (files without resources or any link to a search service or landing page are ignored).
+2015-04-21 14:12:03,470 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:183] - Update of 7424 took 95 secs. Total nr of files analyzed 7427
+2015-04-21 14:20:46,507 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#initSolrServer:235] - Initializing Solr Server on http://localhost:8080/vlo-solr-3.1/core0/
+2015-04-21 14:20:46,659 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:124] - Deleting original data...
+2015-04-21 14:20:46,813 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:127] - Deleting original data done.
+2015-04-21 14:20:46,813 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:132] - Start of processing: Test
+2015-04-21 14:21:10,044 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:143] - Skipping /var/vlo/data/test/oai_dp_1185800229C0000000317515dp5.xml because it is too large.
+2015-04-21 14:21:10,059 ERROR [eu.clarin.cmdi.vlo.importer.FacetMappingFactory#createConceptLinkPathMapping:229] - Cannot create ConceptLink Map from xsd (xsd is probably not reachable): clarin.eu:cr1:p_1380203308465. All metadata instances that use this xsd will not be imported correctly.
+2015-04-21 14:21:10,069 ERROR [eu.clarin.cmdi.vlo.importer.CMDIComponentProfileNamePostProcessor#process:67] - Cannot open and/or parse XML Schema: http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1380203308465.
+2015-04-21 14:21:17,859 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:143] - Skipping /var/vlo/data/test/oai_easy_dans_knaw_nl_easy_file_4334126.xml because it is too large.
+2015-04-21 14:21:17,948 ERROR [eu.clarin.cmdi.vlo.importer.FacetMappingFactory#createConceptLinkPathMapping:229] - Cannot create ConceptLink Map from xsd (xsd is probably not reachable): http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1360230992133/xsd. All metadata instances that use this xsd will not be imported correctly.
+2015-04-21 14:21:18,612 ERROR [eu.clarin.cmdi.vlo.importer.CMDIComponentProfileNamePostProcessor#process:67] - Cannot open and/or parse XML Schema: http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/
+      http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/profiles/clarin.eu:cr1:p_1360230992133/xsd
+    .
+2015-04-21 14:21:51,761 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#sendDocs:414] - Sending 23 docs to solr server. Total number of docs updated till now: 0
+2015-04-21 14:21:51,763 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:152] - End of processing: Test
+2015-04-21 14:21:52,618 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#buildSuggesterIndex:430] - Building index for autocompletion.
+2015-04-21 14:21:52,657 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:179] - Found 6 file(s) without an id. (id is generated based on fileName but that may not be unique)
+2015-04-21 14:21:52,657 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:180] - Found 0 file(s) with errors.
+2015-04-21 14:21:52,657 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:181] - Found 3 file(s) that where ignored (files without resources or any link to a search service or landing page are ignored).
+2015-04-21 14:21:52,658 INFO [eu.clarin.cmdi.vlo.importer.MetadataImporter#startImport:183] - Update of 23 took 65 secs. Total nr of files analyzed 26
