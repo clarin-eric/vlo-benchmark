@@ -23,7 +23,8 @@ the SOLR index data, make sure there is enough disk space (at least several
 gigabytes)
 	
 - Start the Tomcat instance with SOLR inside using `start-solr.sh`
-  * check that it's running at <http://localhost:8080/vlo-solr-3.1>
+  * Check that it's running at <http://localhost:8080/vlo-solr-3.1>
+  * The Tomcat can be stopped again by running `stop-solr.sh`
 
 - Start the import by running `time-import.sh`
   * this will create a file `import-time.out.${timestamp}` with timing information
