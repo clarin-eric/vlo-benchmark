@@ -33,10 +33,11 @@ gigabytes)
   * a QUICK TEST IMPORT can be carried out by running
  		`time-import.sh vlo/config/VloConfig-test.xml`
 
-## Note
+## Notes
 
-- The import locations are configured in vlo/config/VloConfig.xml
+- The import locations are configured in `vlo/config/VloConfig.xml`
 - The SOLR data directory location is configured in
 `vlo/config/solr/collection1/conf/solrconfig.xml`
-- Do not try to start the tomcat from any other location, as the location of the 
-SOLR configuration is defined with a relative path
+- Do NOT try to start the tomcat from any other location using the Tomcat 
+startup script, as the location of the SOLR configuration is defined with a 
+relative path (in `tomcat/webapps/vlo-solr-3.1/META-INF/context.xml`)
