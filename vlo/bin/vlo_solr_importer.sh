@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Get the script's source directory
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
