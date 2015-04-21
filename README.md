@@ -4,7 +4,7 @@ Ready-to-use benchmarking distribution on basis of the VLO importer and a SOLR
 instance running inside Tomcat. 
 
 The dataset can be obtained from 
-<https://b2drop.eudat.eu/public.php?service=files&t=a3e18f04e900fab527e4af3727524f55>
+[this b2drop share](https://b2drop.eudat.eu/public.php?service=files&t=a3e18f04e900fab527e4af3727524f55).
 
 ## Setup and running: step by step
 
@@ -12,9 +12,10 @@ The dataset can be obtained from
 
 - Copy or link the 'data' directory with VLO benchmark data to that directory so
 that we have
-  * /var/vlo/data/KB
-  * /var/vlo/data/hathi, clarin-others
   * /var/vlo/data/clarin-others
+  * /var/vlo/data/hathi
+  * /var/vlo/data/KB
+  * /var/vlo/data/test
 
 - Make a directory '/var/vlo/solrdata' and make sure it is writable to the user
 that will be running the tomcat server; this directory will be populated by
