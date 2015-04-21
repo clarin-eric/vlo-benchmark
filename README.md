@@ -39,14 +39,14 @@ gigabytes)
 In a scheduled setup, the following should happen periodically (assuming that 
 the SOLR Tomcat is running already):
 - Download a fresh copy of the data set
-- Unpack the data set into the import location (/var/vlo/data)
+- Unpack the data set into the import location (`/var/vlo/data`)
 - Run the import via `time-import.sh`
 
 ## Notes
 
 - The import locations are configured in `vlo/config/VloConfig.xml`
 - The SOLR data directory location is configured in
-<vlo/config/solr/collection1/conf/solrconfig.xml>
+`vlo/config/solr/collection1/conf/solrconfig.xml`
 - Do NOT try to start the tomcat from any other location using the Tomcat 
 startup script, as the location of the SOLR configuration is defined with a 
-relative path (in <tomcat/webapps/vlo-solr-3.1/META-INF/context.xml>)
+relative path (in `tomcat/webapps/vlo-solr-3.1/META-INF/context.xml`)
