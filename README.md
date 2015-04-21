@@ -28,7 +28,10 @@ gigabytes)
   * The Tomcat can be stopped again by running `stop-solr.sh`
 
 - Start the import by running `time-import.sh`
-  * This will create a file `import-time.out.${timestamp}` with timing information
+  * The import will fail with an exception if the SOLR Tomcat is not running or
+  cannot be found at the expected location (see above)
+  * This will create a file `import-time.out.${timestamp}` with timing
+  information
   * Detailed importer output is available at `vlo/log/vlo-importer.log`
   * The import can take a long time so you may want to run it detached from
   any terminal session
