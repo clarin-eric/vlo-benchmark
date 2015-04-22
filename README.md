@@ -57,10 +57,10 @@ the SOLR Tomcat is running already):
 is configured in `vlo/config/solr/collection1/conf/solrconfig.xml`
 - If you wish to change the _Tomcat port(s)_, change the following:
  * The actual port configurations in `tomcat/conf/server.xml`
+ * The SOLR ULR for the importer to connect to in `vlo/config/VloConfig.xml`
 
 ### Execution 
  
- * The SOLR ULR for the importer to connect to in `vlo/config/VloConfig.xml`
 - Do NOT try to start the tomcat from any other location using the Tomcat 
 startup script, as the location of the SOLR configuration is defined with a 
 relative path (in `tomcat/webapps/vlo-solr-3.1/META-INF/context.xml`)
