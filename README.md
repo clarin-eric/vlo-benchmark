@@ -49,9 +49,18 @@ the SOLR Tomcat is running already):
 
 ## Notes
 
-- The import locations are configured in `vlo/config/VloConfig.xml`
-- The SOLR data directory location is configured in
-`vlo/config/solr/collection1/conf/solrconfig.xml`
+### Custom configuration
+
+- The _import locations_ (defaults are in `/var/vlo/data`) are configured in
+`vlo/config/VloConfig.xml`
+- The _SOLR data directory_ location (default is `/var/vlo/solrdata`) 
+is configured in `vlo/config/solr/collection1/conf/solrconfig.xml`
+- If you wish to change the _Tomcat port(s)_, change the following:
+ * The actual port configurations in `tomcat/conf/server.xml`
+
+### Execution 
+ 
+ * The SOLR ULR for the importer to connect to in `vlo/config/VloConfig.xml`
 - Do NOT try to start the tomcat from any other location using the Tomcat 
 startup script, as the location of the SOLR configuration is defined with a 
 relative path (in `tomcat/webapps/vlo-solr-3.1/META-INF/context.xml`)
