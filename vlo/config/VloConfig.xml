@@ -50,7 +50,7 @@
         
     </dataRoots>
     
-    <solrUrl>http://localhost:8080/vlo-solr-3.1/core0/</solrUrl>
+    <solrUrl>http://localhost:9080/vlo-solr-3.1/core0/</solrUrl>
     
     <homeUrl>http://www.clarin.eu/vlo</homeUrl>
     

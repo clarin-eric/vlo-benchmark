@@ -23,8 +23,9 @@ the SOLR index data, make sure there is enough disk space (at least several
 gigabytes)
 	
 - Start the Tomcat instance with SOLR inside using `start-solr.sh`
-  * The Tomcat will run on port 8080 - make sure it is available before starting
-  * Check that it's running at <http://localhost:8080/vlo-solr-3.1>
+  * The Tomcat will run on __port 9080__ - make sure it is available before starting
+  (it will also occupy ports 9005, 9009 and 9443)
+  * Check that it's running at <http://localhost:9080/vlo-solr-3.1>
   * The Tomcat can be stopped again by running `stop-solr.sh`
 
 - Start the import by running `time-import.sh`
