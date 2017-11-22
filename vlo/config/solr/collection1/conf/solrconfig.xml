@@ -75,7 +75,7 @@
        Tomcat, add a line to ${catalin.home}/bin/setenv.sh, e.g.:
       	 export JAVA_OPTS="$JAVA_OPTS -Dsolr.data.dir=/var/vlo/solr/data"
   -->
-   <dataDir>/var/vlo-benchmark-solrdata</dataDir>
+   <dataDir>/tmp/vlo-benchmark-solrdata</dataDir>
 
   <!--	Enables JMX if and only if an existing MBeanServer is found, use this
     if you want to configure JMX through JVM parameters. Remove this to disable

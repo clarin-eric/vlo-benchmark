@@ -3,8 +3,8 @@ set -e
 
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 DATA_URL="https://gitlab.com/CLARIN-ERIC/docker-vlo-sample-data/raw/master/image/sample-data.tar.gz"
-DATA_DIR="/var/vlo-benchmark-data/"
-SOLR_DATA_DIR="/var/vlo-benchmark-solrdata"
+DATA_DIR="/tmp/vlo-benchmark-data/"
+SOLR_DATA_DIR="/tmp/vlo-benchmark-solrdata"
 DEFAULT_ITERATIONS=1
 
 if ! [ -d "$DATA_DIR" ]; then
