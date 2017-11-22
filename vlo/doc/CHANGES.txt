@@ -1,6 +1,292 @@
-Bug Fixes and Features
+Bug fixes and new features
+--------------------------
+VLO 4.2.1 (August 2017)
 
-VLO 3.1 (???)
+* Parallel processing during import and caching improvements
+	<https://github.com/clarin-eric/VLO/issues/29>
+	<https://github.com/clarin-eric/VLO/issues/68>
+* Fixed detecting (conceptLink) context for attribute XPaths 
+	<https://github.com/clarin-eric/VLO/issues/91>
+* Improved performance when reading self links from files (for hierarchy processing)
+
+VLO 4.2.0 (July 2017)
+
+## New and improved features ##
+
+* The 'all facet values' dialogue now supports multi-value selection
+    <https://github.com/clarin-eric/VLO/issues/74>
+* Integration of the Virtual Collection Registry with the VLO
+    <https://github.com/clarin-eric/VLO/issues/37>
+* Better support for multilingual values, with priority for English content. This is
+used to display English record titles in headers, but show alternative values in other
+languages in the details.
+    <https://github.com/clarin-eric/VLO/issues/59>
+    <https://github.com/clarin-eric/VLO/issues/83>
+* Scroll to top of search results when navigating to next or previous page
+    <https://github.com/clarin-eric/VLO/issues/12>
+* "License type" (PUB/ACA/RES) is stored separately from other availability information,
+and any explicit values linked to this concept in metadata override any derived values
+    <https://github.com/clarin-eric/VLO/issues/39>
+    <https://github.com/clarin-eric/VLO/issues/55>
+    <https://github.com/clarin-eric/VLO/pull/86>
+* Support for mapping based on vocabulary value URIs from the CLARIN vocabulary service
+    <https://github.com/clarin-eric/VLO/issues/47>
+* The maximum file size for processed CMDI records has been increased to 50MB
+    <https://github.com/clarin-eric/VLO/issues/81>
+    <https://github.com/clarin-eric/VLO/pull/82>
+* Piwik improvements: tracking of in-page events and registering canonical page URLs
+    <https://github.com/clarin-eric/VLO/issues/75>
+    <https://github.com/clarin-eric/VLO/issues/78>    
+* A 'favicon' was added
+    <https://github.com/clarin-eric/VLO/issues/8>
+* System administration: placeholders in VloConfig.xml for dockerised environments
+    <https://github.com/clarin-eric/VLO/issues/67>
+
+## Bug fixes ##
+
+* Mapping of different languages that have the same label
+    <https://github.com/clarin-eric/VLO/issues/73>
+* "Search page for this record" broken for 'hdl:' URIs
+    <https://github.com/clarin-eric/VLO/issues/85>
+* Do not concatenate landing pages if multiple found
+    <https://github.com/clarin-eric/VLO/issues/79>
+* Unresolved URLs are sent to LRS with resolution attempt
+    <https://github.com/clarin-eric/VLO/issues/76>
+
+
+VLO 4.1.0 (April 2017)
+
+## Web application enhancements and additions ##
+
+* Multiple values can be selected (OR/AND) for the facets
+    <https://github.com/clarin-eric/VLO/issues/32>
+* No facets are hidden if there are only a few left
+    <https://github.com/clarin-eric/VLO/issues/52>
+* The "Data provider" facet has been renamed to "Metadata source"
+    <https://github.com/clarin-eric/VLO/issues/17>
+* Collection names are shown below record titles in the search results
+    <https://github.com/clarin-eric/VLO/issues/60>
+* English descriptions are shown first in search results and the record page
+    <https://github.com/clarin-eric/VLO/issues/44>
+* Records with only one resource have this resource featured more prominently
+    <https://github.com/clarin-eric/VLO/issues/23>
+* Better pagination in the 'all facet values' view
+	<https://github.com/clarin-eric/VLO/issues/70>
+* The help page has been extended and updated, and made easier to find
+    <https://github.com/clarin-eric/VLO/issues/9>
+    <https://github.com/clarin-eric/VLO/issues/10>
+* Improved indexability by search engines
+    <https://github.com/clarin-eric/VLO/issues/4>
+* Base styling is imported from the CLARIN base style, making use of its
+distribution mechanism through Maven artifacts deployed to Nexus.
+    <https://github.com/clarin-eric/VLO/issues/30>
+    <https://github.com/clarin-eric/VLO/issues/65>
+* Added icons for public domain mark and "no copyright" right statements
+    <https://github.com/clarin-eric/VLO/issues/48>
+* The icons for resource types were replaced with clearer icons from
+fontawesome.io, and 'compressed archive' was added as a resource class with its
+own icon
+
+## Web application fixes ##
+
+* Fixed tree expanding issues in metadata hierarchy display
+    <https://github.com/clarin-eric/VLO/issues/56>
+* Fixed display issues for non-ASCII characters in facet values
+    <https://github.com/clarin-eric/VLO/issues/19>
+* Fixed parsing issues with links in descriptions and other fields 
+    <https://github.com/clarin-eric/VLO/issues/18>
+* Fixed highlighting of search terms in search results and on the record page
+    <https://github.com/clarin-eric/VLO/issues/49>
+* Relative links in records no longer lead to invalid resource links
+    <https://github.com/clarin-eric/VLO/issues/57>
+* Resource links on the record page always get a label
+    <https://github.com/clarin-eric/VLO/issues/6>
+
+## Import and mapping improvements ##
+
+* Facet mapping and normalisation definition can be sourced from an external
+location
+    <https://github.com/clarin-eric/VLO/issues/22>
+* Processing of hierarchies can be enabled and disabled for individual metadata
+sets
+    <https://github.com/clarin-eric/VLO/issues/62>
+* Mapping definitions have been extended & improved for licences/availability
+    <https://github.com/clarin-eric/VLO/issues/41>
+    <https://github.com/clarin-eric/VLO/pull/63>
+* Improved mapping for the "Song" profile (Meertens Liederenbank)
+    <https://github.com/clarin-eric/VLO/issues/43>
+* Reduced load on system storage when importing large collections
+    <https://github.com/clarin-eric/VLO/issues/58>
+* Improved importer performance
+    <https://github.com/clarin-eric/VLO/issues/2>
+
+VLO 4.0.2 (December 2016)
+* Updated mapping for licence and availability information
+    <https://github.com/clarin-eric/VLO/issues/21>
+* Updated national project mapping
+    <https://github.com/clarin-eric/VLO/issues/27>
+* Fixed occurence of multiple availability level 'tags' (PUB/ACA/RES)
+    <https://github.com/clarin-eric/VLO/issues/38>
+* 'Resource title' concept preferred over 'resource name' for 'name' field
+    <https://github.com/clarin-eric/VLO/issues/16>
+* Removed 'scoll down to see all records' behaviour
+    <https://github.com/clarin-eric/VLO/issues/20>
+
+VLO 4.0.1 (August 2016)
+* Fetching external fonts from https locations, preventing browser 
+warnings/issues
+* Fixed mapping of national project from collection display name
+* Removed redundant XPaths from mapping
+    <https://trac.clarin.eu/ticket/959>
+
+VLO 4.0.0 (July 2016)
+* VLO importer supports CMDI 1.2 instead of CMDI 1.1
+    <https://trac.clarin.eu/ticket/897>
+* Field values can be extracted from attributes with concept link
+    <https://trac.clarin.eu/ticket/836>
+* Extended mapping of the 'keyword' and 'rightsHolder' facets
+    <https://trac.clarin.eu/ticket/931>
+    <https://trac.clarin.eu/ticket/936>
+
+* Redesigned front end using bootstrap and the common CLARIN style
+    <https://trac.clarin.eu/ticket/757>
+* Added a link to process resources via the Language Resource Switchboard
+    <https://trac.clarin.eu/ticket/939>
+* Fixed facet value count issues when selecting availability level(s)
+    <https://trac.clarin.eu/ticket/900>
+* Proper 404 response for records that do not exist (anymore)
+    <https://trac.clarin.eu/ticket/928>
+
+
+VLO 3.4.1 (April 2016)
+
+* Fixed a critical querying performance issue
+	<https://trac.clarin.eu/ticket/906>
+* Fixed the sitemap generator
+* Small fixed in the icons
+* Included a report generator
+
+VLO 3.4 (March 2016)
+
+* Major revisions and improvements to the mapping of availability, licence and
+access information
+    <https://trac.clarin.eu/ticket/813>
+    <https://trac.clarin.eu/ticket/814>
+    <https://trac.clarin.eu/ticket/852>
+    <https://trac.clarin.eu/ticket/857>
+* Prominent presentation of availability and licence information in search
+result and the record page
+    <https://trac.clarin.eu/ticket/812>
+* Dedicated facet value selector for main availability levels (PUB/ACA/RES)
+* Added legal information about VLO to about page
+    <https://trac.clarin.eu/ticket/804>
+* More references to the landing page and rephrasing of label 'original context'
+    <https://trac.clarin.eu/ticket/751>
+* Visual indication of search activity
+    <https://trac.clarin.eu/ticket/800>
+* More recently imported records appear first
+    <https://trac.clarin.eu/ticket/815>
+* More files included in hierarchies
+    <https://trac.clarin.eu/ticket/828>
+* Uniform mapping/normalisation definition format
+    <https://trac.clarin.eu/ticket/773>
+* Improved Solr querying performance
+    <https://trac.clarin.eu/ticket/795>
+* Upgraded front end to Wicket 7
+    <https://trac.clarin.eu/ticket/785>
+* Improved Piwik reporting and, also for AJAX requests, and better configuration
+    <https://trac.clarin.eu/ticket/752>
+* Fixed issue with indexing of files in metadata hierarchies
+    <https://trac.clarin.eu/ticket/831>
+* The 'continent' facet was removed from the search interface
+* The importer can now request up to 4 gigabytes of heap space
+* A sitemap generator has been added (separate tool than can be run after
+import to generate a sitemap for search engines)
+
+VLO 3.3.2 (November 2015)
+
+* Fixed issue with hierarchy links to unavailable records
+        <https://trac.clarin.eu/ticket/790>
+* Visual indication that a search query is being asynchronously
+        <https://trac.clarin.eu/ticket/800>
+* Collection records with a large number of children only load the first few,
+allowing the user to load more if desired
+        <https://trac.clarin.eu/ticket/805>
+* Search terms are now highlighted in the search results as well
+
+VLO 3.3.1 (September 2015)
+
+* Ranking based on relevance with boosts for matches in certain fields and on
+basis of record properties such as hierarchy level and presence of name,
+description and resource references
+        <https://trac.clarin.eu/ticket/750>,
+        <https://trac.clarin.eu/ticket/761>
+* Support for advanced search via query syntax, with instructions accessible
+via web application
+        <https://trac.clarin.eu/ticket/762>,
+        <https://trac.clarin.eu/ticket/770>
+* Metadata hierarchies are processed on import and interactively presented
+in the web application
+        <https://trac.clarin.eu/ticket/382>
+* Further exlusion of actor languages in the 'language' facet
+        <https://trac.clarin.eu/ticket/246>
+* Hiding of language code prefixes in multi-lingual description fields
+        <https://trac.clarin.eu/ticket/778>
+* Addition of importer option to only import specific data roots
+        <https://trac.clarin.eu/ticket/768>
+* Extended language variants name map with all languages that have multiple
+names in ISO 639-3
+
+Known issues:
+* In some cases, it may happen that hierarchical relations to records that do
+not appear in the index are stored
+		<https://trac.clarin.eu/ticket/790>
+
+VLO 3.2.2 (August 2015)
+* Fixes an exception occurring when clicking the 'Report' link on the main page
+        <https://trac.clarin.eu/ticket/784>
+
+VLO 3.2.1 (July 2015)
+* Graceful handling of requests for all values of nonexistent facets
+* Included the VLO iframe page for the CLARIN-D homepage
+* Fixed a potential file descriptor leak in the VLO importer
+* Fixed appearence of 'jsessionid' parameter in the URL
+
+VLO 3.2 (June 2015)
+	
+Mapping:
+* Added search facet "Availability" based on licensing information
+	<https://trac.clarin.eu/ticket/393>
+* Non-English language names are ignored (if language code is not used)
+	<https://trac.clarin.eu/ticket/170>
+* Mapping of language name variants to canonical names (OLAC)
+	<https://trac.clarin.eu/ticket/749>
+* Mapping of language tags without olac-language attribute (OLAC)
+	<https://trac.clarin.eu/ticket/412>
+
+Search interface:
+* Added tooltips to facets with facet descriptions
+	<https://trac.clarin.eu/ticket/711>
+* Search term can be removed without removing facet selection in 'bread crumbs'
+	<https://trac.clarin.eu/ticket/619>
+* Search result ranking by relevance
+	<https://trac.clarin.eu/ticket/575>
+		
+Record page:
+* Paging of resources in record page
+	<https://trac.clarin.eu/ticket/565>
+* Improved handle resolution for resources in record page
+	<https://trac.clarin.eu/ticket/550>
+* Fixed handle link in record page for cases that contain an '@' character
+	<https://trac.clarin.eu/ticket/625>
+* Link to language info page uses new URL scheme
+	<https://trac.clarin.eu/ticket/753>
+
+Web application general:
+* VLO web pages contain a canonical URL link (improving search engine behaviour)
+	<https://trac.clarin.eu/ticket/135>
+	
+VLO 3.1 (March 2015)
 * Added the 'license' facet
 	<https://trac.clarin.eu/ticket/393>
 	<https://trac.clarin.eu/ticket/740>

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: twagoo
+Build-Jdk: 1.8.0_101
+Implementation-Title: VLO Solr
+Implementation-Version: 4.2.1
+Implementation-Vendor-Id: eu.clarin.cmdi
+Implementation-Vendor: CLARIN
+

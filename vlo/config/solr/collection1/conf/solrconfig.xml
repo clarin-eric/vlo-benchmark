@@ -75,7 +75,7 @@
        Tomcat, add a line to ${catalin.home}/bin/setenv.sh, e.g.:
       	 export JAVA_OPTS="$JAVA_OPTS -Dsolr.data.dir=/var/vlo/solr/data"
   -->
-   <dataDir>/var/vlo/solrdata</dataDir>
+   <dataDir>/var/vlo-benchmark-solrdata</dataDir>
 
   <!--	Enables JMX if and only if an existing MBeanServer is found, use this
     if you want to configure JMX through JVM parameters. Remove this to disable
@@ -102,13 +102,28 @@
          maxDocs - number of updates since last commit is greater than this
          maxTime - oldest uncommited update (in ms) is this long ago
          Instead of enabling autoCommit, consider using "commitWithin"
-         when adding documents. http://wiki.apache.org/solr/UpdateXmlMessages
+         when adding documents. http://wiki.apache.org/solr/UpdateXmlMessages-->
     <autoCommit> 
-      <maxDocs>10000</maxDocs>
-      <maxTime>1000</maxTime> 
+      <maxDocs>30000</maxDocs>
+      <!-- <maxTime>1000</maxTime> -->
     </autoCommit>
-    -->
+    
+    <!-- SoftAutoCommit
 
+         Perform a 'soft' commit automatically under certain conditions.
+         This commit avoids ensuring that data is synched to disk.
+
+         maxDocs - Maximum number of documents to add since the last
+                   soft commit before automaticly triggering a new soft commit.
+
+         maxTime - Maximum amount of time in ms that is allowed to pass
+                   since a document was added before automaticly
+                   triggering a new soft commit.
+      -->
+
+<!--     <autoSoftCommit>
+       <maxTime>10000</maxTime>
+     </autoSoftCommit>-->
 
     <!-- The RunExecutableListener executes an external command from a
       hook such as postCommit or postOptimize.
@@ -134,7 +149,7 @@
       <bool name="wait">true</bool>
     </listener>
     -->
-
+    <updateLog/>
   </updateHandler>
   
   <!-- Use the following format to specify a custom IndexReaderFactory - allows for alternate
@@ -362,6 +377,90 @@
   <requestHandler name="standard" class="solr.SearchHandler" default="true">
     <!-- default values for query parameters -->
      <lst name="defaults">
+        <str name="echoParams">explicit</str>
+        
+        <!-- See https://wiki.apache.org/solr/DisMaxQParserPlugin -->
+        <str name="defType">edismax</str>
+        
+        <!-- 'Fetch all documents' query -->
+        <str name="q.alt">*:*</str>
+        
+        <!-- Query fields -->
+        <str name="qf">
+           text name^8 description^4 keywords^2 language^2 country^2 organisation^2 subject^2 collection^1 modality^1 genre^1 continent^.5 id^.1
+        </str>
+        
+        <!-- alias: language = _languageName -->
+        <str name="f.language.qf">
+            _languageName
+        </str>
+        
+        <!-- alias: language = _languageName -->
+        <str name="f.resourcetype.qf">
+            resourceClass
+        </str>
+        
+        <!-- alias: language = _languageName -->
+        <str name="f.resources.qf">
+            _resourceRefCount
+        </str>
+        
+        <!-- alias: licence = license -->
+        <str name="f.licence.qf">
+            license
+        </str>
+        
+        <!-- Phrase fields (boost if phrase is matched) -->
+        <str name="pf">
+            name^2 description
+        </str>
+        
+        <!-- Boost fields (boost based on field value regardless of query) -->
+        <str name="bf">
+            <!-- 
+                boost by hierarchy weight (reverse order because lower numbers
+                indicate a higher level), then by number of parts (differentiate
+                up till 50), then by recency of import -->
+            rord(_hierarchyWeight) _hasPartCountWeight^.2  rord(_daysSinceLastSeen)^.05
+            <!-- TODO: prefer CLARIN records over non-CLARIN? -->
+        </str>
+        
+        <!-- boost fields with a name -->
+        <str name="bq">
+            name:[* TO *]^2
+        </str>
+
+        <!-- boost fields with a description -->
+        <str name="bq">
+            description:[* TO *]
+        </str>
+        
+        <!-- boost fields with a resource -->
+        <str name="bq">
+            _hasPart:[* TO *] OR _resourceRef:[* TO *]
+        </str>
+        
+        <!-- boost resources with public availability (but not if combined with another availability level) -->
+        <str name="bq">
+            availability:(PUB -ACA -RES -UNSPECIFIED)^0.5
+        </str>
+        
+        <!-- boost resources with academic availability (but less than public and not if combined with another availability level) -->
+        <str name="bq">
+            availability:(ACA -PUB -RES -UNSPECIFIED)^0.2
+        </str>
+        
+          <!--
+          <int name="rows">10</int>
+          <str name="fl">*</str>
+          <str name="version">2.1</str>
+           -->
+     </lst>
+  </requestHandler>
+  
+  <requestHandler name="fast" class="solr.SearchHandler" default="false">
+    <!-- default values for query parameters -->
+     <lst name="defaults">
        <str name="echoParams">explicit</str>
        <!--
        <int name="rows">10</int>
@@ -370,6 +469,7 @@
         -->
      </lst>
   </requestHandler>
+
 
  <!-- <requestHandler name="/dataimport"
    	class="org.apache.solr.handler.dataimport.DataImportHandler">
@@ -735,7 +835,8 @@
        The response format differs from solr1.1 formatting and returns a standard error code.
        To enable solr1.1 behavior, remove the /update handler or change its path
     -->
-  <requestHandler name="/update" class="solr.UpdateRequestHandler" />
+   <!-- since Solr 4.10 this requestHandler is implicit, will be generated automatically
+   <requestHandler name="/update" class="solr.UpdateRequestHandler" />-->
 
 
   <requestHandler name="/update/javabin" class="solr.UpdateRequestHandler" />
@@ -791,8 +892,8 @@
   <requestHandler name="/analysis/field" class="solr.FieldAnalysisRequestHandler" />
 
 
-  <!-- CSV update handler, loaded on demand -->
-  <requestHandler name="/update/csv" class="solr.CSVRequestHandler" startup="lazy" />
+  <!-- since Solr 4.10 this requestHandler is implicit, will be generated automatically -->
+  <!-- <requestHandler name="/update/csv" class="solr.CSVRequestHandler" startup="lazy" />-->
 
 
   <!-- 
@@ -904,33 +1005,33 @@
     <queryResponseWriter name="php" class="org.apache.solr.request.PHPResponseWriter"/>
     <queryResponseWriter name="phps" class="org.apache.solr.request.PHPSerializedResponseWriter"/>
 
-    <queryResponseWriter name="custom" class="com.example.MyResponseWriter"/>
-  -->
-
-  <!-- XSLT response writer transforms the XML output by any xslt file found
-       in Solr's conf/xslt directory.  Changes to xslt files are checked for
-       every xsltCacheLifetimeSeconds.  
-   -->
-  <queryResponseWriter name="xslt" class="org.apache.solr.response.XSLTResponseWriter">
-    <int name="xsltCacheLifetimeSeconds">5</int>
-  </queryResponseWriter>
-
-
-  <!-- example of registering a query parser
-  <queryParser name="lucene" class="org.apache.solr.search.LuceneQParserPlugin"/>
-  -->
-
-  <!-- example of registering a custom function parser 
-  <valueSourceParser name="myfunc" class="com.mycompany.MyValueSourceParser" />
-  -->
-
-  <!-- config for the admin interface -->
-  <admin>
-    <defaultQuery>solr</defaultQuery>
-
-    <!-- configure a healthcheck file for servers behind a loadbalancer
-    <healthcheck type="file">server-enabled</healthcheck>
+      <queryResponseWriter name="custom" class="com.example.MyResponseWriter"/>
     -->
-  </admin>
+
+    <!-- XSLT response writer transforms the XML output by any xslt file found
+        in Solr's conf/xslt directory.  Changes to xslt files are checked for
+        every xsltCacheLifetimeSeconds.  
+    -->
+    <queryResponseWriter name="xslt" class="org.apache.solr.response.XSLTResponseWriter">
+        <int name="xsltCacheLifetimeSeconds">5</int>
+    </queryResponseWriter>
+
+
+    <!-- example of registering a query parser
+    <queryParser name="lucene" class="org.apache.solr.search.LuceneQParserPlugin"/>
+    -->
+
+    <!-- example of registering a custom function parser 
+    <valueSourceParser name="myfunc" class="com.mycompany.MyValueSourceParser" />
+    -->
+
+    <!-- config for the admin interface -->
+    <admin>
+        <defaultQuery>solr</defaultQuery>
+
+        <!-- configure a healthcheck file for servers behind a loadbalancer
+        <healthcheck type="file">server-enabled</healthcheck>
+        -->
+    </admin>
 
 </config>
