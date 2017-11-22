@@ -45,7 +45,7 @@
     <solrThreads>4</solrThreads>
     
     <!-- leave empty to use default packaged definition -->
-    <facetConceptsFile>file:/srv/VLO-mapping/mapping/facetConcepts.xml</facetConceptsFile>
+    <facetConceptsFile>https://raw.githubusercontent.com/clarin-eric/VLO-mapping/master/mapping/facetConcepts.xml</facetConceptsFile>
     
     <profileSchemaUrl>http://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.x/profiles/{PROFILE_ID}/xsd</profileSchemaUrl>
     
@@ -63,17 +63,17 @@
         Evaluated in the this order.
     -->
     
-    <nationalProjectMapping>file:/srv/VLO-mapping/uniform-maps/nationalProjectsMapping.xml</nationalProjectMapping> <!-- bundled resource: /uniform-maps/nationalProjectsMapping.xml -->
+    <nationalProjectMapping>https://raw.githubusercontent.com/clarin-eric/VLO-mapping/master/uniform-maps/nationalProjectsMapping.xml</nationalProjectMapping> <!-- bundled resource: /uniform-maps/nationalProjectsMapping.xml -->
     
-    <organisationNamesUrl>file:/srv/VLO-mapping/uniform-maps/OrganisationControlledVocabulary.xml</organisationNamesUrl> <!-- bundled resource: /uniform-maps/OrganisationControlledVocabulary.xml -->
+    <organisationNamesUrl>https://raw.githubusercontent.com/clarin-eric/VLO-mapping/master/uniform-maps/OrganisationControlledVocabulary.xml</organisationNamesUrl> <!-- bundled resource: /uniform-maps/OrganisationControlledVocabulary.xml -->
     
-    <languageNameVariantsUrl>file:/srv/VLO-mapping/uniform-maps/LanguageNameVariantsMap.xml</languageNameVariantsUrl> <!-- bundled resource: /uniform-maps/LanguageNameVariantsMap.xml -->
+    <languageNameVariantsUrl>https://raw.githubusercontent.com/clarin-eric/VLO-mapping/master/uniform-maps/LanguageNameVariantsMap.xml</languageNameVariantsUrl> <!-- bundled resource: /uniform-maps/LanguageNameVariantsMap.xml -->
     
-    <licenseAvailabilityMapUrl>file:/srv/VLO-mapping/uniform-maps/LicenseAvailabilityMap.xml</licenseAvailabilityMapUrl> <!-- bundled resource: /uniform-maps/LicenseAvailabilityMap.xml -->
+    <licenseAvailabilityMapUrl>https://raw.githubusercontent.com/clarin-eric/VLO-mapping/master/uniform-maps/LicenseAvailabilityMap.xml</licenseAvailabilityMapUrl> <!-- bundled resource: /uniform-maps/LicenseAvailabilityMap.xml -->
     
-    <licenseURIMapUrl>file:/srv/VLO-mapping/uniform-maps/LicenseURIMap.xml</licenseURIMapUrl> <!-- bundled resource: /uniform-maps/LicenseURIMap.xml -->
+    <licenseURIMapUrl>https://raw.githubusercontent.com/clarin-eric/VLO-mapping/master/uniform-maps/LicenseURIMap.xml</licenseURIMapUrl> <!-- bundled resource: /uniform-maps/LicenseURIMap.xml -->
 
-    <licenseTypeMapUrl>file:/srv/VLO-mapping/uniform-maps/LicenseTypeMap.xml</licenseTypeMapUrl> <!-- bundled resource: /uniform-maps/LicenseAvailabilityMap.xml -->
+    <licenseTypeMapUrl>https://raw.githubusercontent.com/clarin-eric/VLO-mapping/master/uniform-maps/LicenseTypeMap.xml</licenseTypeMapUrl> <!-- bundled resource: /uniform-maps/LicenseAvailabilityMap.xml -->
             
     <!-- Fields shown as facets on the search page -->
     <facetFields>        
