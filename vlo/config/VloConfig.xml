@@ -42,7 +42,7 @@
     
     <fileProcessingThreads>-1</fileProcessingThreads>
     
-    <solrThreads>4</solrThreads>
+    <solrThreads>2</solrThreads>
     
     <!-- leave empty to use default packaged definition -->
     <facetConceptsFile>https://raw.githubusercontent.com/clarin-eric/VLO-mapping/master/mapping/facetConcepts.xml</facetConceptsFile>
