@@ -2,7 +2,8 @@
 set -e
 
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-DATA_URL="https://gitlab.com/CLARIN-ERIC/docker-vlo-sample-data/raw/master/image/sample-data.tar.gz"
+#DATA_URL="https://gitlab.com/CLARIN-ERIC/docker-vlo-sample-data/raw/master/image/sample-data.tar.gz"
+DATA_URL="https://surfdrive.surf.nl/files/index.php/s/L4DiCkv1n7FA0w0/download"
 DATA_DIR="/tmp/vlo-benchmark-data/"
 SOLR_DATA_DIR="/tmp/vlo-benchmark-solrdata"
 DEFAULT_ITERATIONS=1
