@@ -2,17 +2,19 @@
 set -e
 
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-DATA_URL="https://gitlab.com/CLARIN-ERIC/docker-vlo-sample-data/raw/master/image/sample-data.tar.gz"
+DATA_URL="${DATA_URL:-https://gitlab.com/CLARIN-ERIC/docker-vlo-sample-data/raw/master/image/sample-data.tar.gz}"
 #DATA_URL="https://surfdrive.surf.nl/files/index.php/s/9FugiBAyNjlCF66/download"
-DATA_DIR="/tmp/vlo-benchmark-data/"
-SOLR_DATA_DIR="/tmp/vlo-benchmark-solrdata"
+DATA_DIR="${DATA_DIR:-/tmp/vlo-benchmark-data/}"
+SOLR_DATA_DIR="${SOLR_DATA_DIR:-/tmp/vlo-benchmark-solrdata}"
 DEFAULT_ITERATIONS=1
 
+echo "Data directory: ${DATA_DIR}"
 if ! [ -d "$DATA_DIR" ]; then
 	echo "Creating data directory $DATA_DIR"
 	mkdir -p "$DATA_DIR"
 fi
 
+echo "Solr data directory: ${SOLR_DATA_DIR}"
 if ! [ -d "$SOLR_DATA_DIR" ]; then
 	echo "Creating Solr data directory $SOLR_DATA_DIR"
 	mkdir -p "$SOLR_DATA_DIR"
