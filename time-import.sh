@@ -21,7 +21,7 @@ fi
 if [ -x /usr/local/bin/gdate ]; then
 	DATE=`/usr/local/bin/gdate --rfc-3339=seconds`
 elif which date > /dev/null 2>&1; then
-	DATE=`/usr/bin/date --rfc-3339=seconds`
+	DATE=`$(which date) --rfc-3339=seconds`
 else
 	echo "Could not set date. If on MacOS, install 'gnu-time'" > /dev/stderr
 fi
