@@ -35,7 +35,7 @@ fi
 
 echo "Emptying data directory..."
 (cd "$DATA_DIR" && rm -rf *)
-echo "Fetching data..."
+echo "Fetching data... from $DATA_URL"
 (cd "$DATA_DIR" && curl -s -L "$DATA_URL" | tar zxf -)
 
 echo "Running ${N} iterations"
