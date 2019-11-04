@@ -1,6 +1,7 @@
 #!/bin/bash
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 export CATALINA_HOME=${DIR}/tomcat
+export JAVA_OPTS="$JAVA_OPTS -Dsolr.data.dir=${SOLR_DATA_DIR}"
 
 echo "Make sure no other Tomcat instance is running on port 8989..."
 echo

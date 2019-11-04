@@ -9,15 +9,11 @@ echo "Building benchmark image..."
 
 docker build -t vlo-benchmark:latest ./docker
 
-echo "Creating volumes..."
-docker volume create "${VOLUME_DATA}"
-docker volume create "${VOLUME_SOLR_DATA}"
-
 docker run --rm  --name vlo-benchmark \
-	-v $(pwd):/benchmark \
-	-v ${VOLUME_DATA}:/data \
+	-v "$(pwd):/benchmark" \
+	-v "${VOLUME_DATA}:/data" \
 	-e DATA_DIR=/data \
-	-v ${VOLUME_SOLR_DATA}:/solr-data \
+	-v "${VOLUME_SOLR_DATA}:/solr-data" \
 	-e SOLR_DATA_DIR=/solr-data \
 	--entrypoint="/bin/bash" \
 	vlo-benchmark:latest /benchmark/benchmark.sh $@
