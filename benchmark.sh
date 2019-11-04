@@ -38,9 +38,13 @@ echo "Emptying data directory..."
 echo "Fetching data... from $DATA_URL"
 (cd "$DATA_DIR" && curl -s -L "$DATA_URL" | tar zxf -)
 
+ln -s "$DATA_DIR" /tmp/vlo-benchmark-data-link
+
 echo "Running ${N} iterations"
 
 for i in `seq 1 $N`; do
 	echo "Iteration ${i}:"
 	(cd "$DIR" && ./time-import.sh)
 done
+
+rm /tmp/vlo-benchmark-data-link

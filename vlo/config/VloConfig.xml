@@ -26,9 +26,9 @@
     
         <DataRoot>
             <originName>CLARIN + Others</originName>
-            <rootFile>/tmp/vlo-benchmark-data/</rootFile>            
+            <rootFile>/tmp/vlo-benchmark-data-link/</rootFile>            
             <prefix>http://catalog.clarin.eu/data/</prefix>
-            <tostrip>/tmp/vlo-benchmark-data/</tostrip>
+            <tostrip>/tmp/vlo-benchmark-data-link/</tostrip>
             <deleteFirst>false</deleteFirst>
         </DataRoot>
         
